@@ -1,11 +1,28 @@
-div 
+/*div 
 {
     border: 1px solid black;
 }
-
-h1 {
+*/
+.text1
+{
     font-style: italic;
     font-weight: bold;
     color: dimgrey;
-    font: 150% sans-serif;
+}
+
+body 
+{
+    color: darkcyan;
+}
+
+.Nombre
+{
+    color: green !important;
+    
+}
+
+.titulo
+{
+    color: black;
+    font-style: italic;
 }

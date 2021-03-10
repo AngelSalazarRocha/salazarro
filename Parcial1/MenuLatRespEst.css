@@ -1,0 +1,97 @@
+* 
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+#caja1.space
+{
+    height: 100%;
+    width: 20%;
+    border: 2px solid rgb(4, 41, 67);
+    background-color: rgb(70, 131, 177);
+    float: left;
+}
+.opcion
+{
+    border: 2px solid rgb(28, 28, 28);
+    width: 100%;
+    margin: 0px;
+    font-size: 2em;
+    text-align: center;
+}
+#caja2.space
+{
+    height: 100%;
+    width: 80%;
+    border: 2px solid rgb(28, 28, 28);
+    background-color: rgb(14, 94, 145);
+    float: left;
+    text-align: center;
+    font-size: 2em;
+}
+h1
+{
+    transform: translateY(280px);
+}
+
+@media screen and (min-width:501px) and (max-width:750px)
+{
+    #caja1.space
+    {
+        height: 10%;
+        width: 100%;
+        border: 2px solid rgb(4, 41, 67);
+        background-color: rgb(70, 131, 177);
+        float: none;
+    }
+    .opcion
+    {
+        width: calc(100% / 4);
+        height: 100%;
+        float:left;
+    }
+    #caja2.space
+    {
+        height: 90%;
+        width: 100%;
+        border: 2px solid rgb(28, 28, 28);
+        background-color: rgb(14, 94, 145);
+        float: left;
+        text-align: center;
+        font-size: 2em;
+    }
+}
+@media screen and (max-width:500px)
+{
+    #caja1.space
+    {
+        height: 40%;
+        width: 100%;
+        border: 2px solid rgb(4, 41, 67);
+        background-color: rgb(70, 131, 177);
+        float: none;
+    }
+    .opcion
+    {
+        width: 100%;
+        height: calc(100% / 4);
+        float: none;
+        text-align: center;
+    }
+    #caja2.space
+    {
+        height: 60%;
+        width: 100%;
+        border: 2px solid rgb(28, 28, 28);
+        background-color: rgb(14, 94, 145);
+        float: left;
+        text-align: center;
+        font-size: 2em;
+    }
+    h1
+    {
+        transform: translateY(180px);
+    }
+}

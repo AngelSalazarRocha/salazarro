@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>Sing up</title>
+        <!--<meta http-equiv="X-UA-Compatible" content="IE-edge"><meta name='viewport' content='width=device-width, initial-scale=1'>-->
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="crossorigin="anonymous"></script>
+        <script src="Login.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" type='text/css' href="Login.css">
+    </head>
+    <body>
+        <!--Modal de confirmación-->
+        <div class="modal" tabindex="-1" id="modalConf" role="dialog">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <!--cabecera-->
+                <div class="modal-header">
+                  <h5 class="modal-title">Empleado tienda</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <!--cuerpo-->
+                <div class="modal-body">
+                  <p>Este es el texto de mensaje modal.</p>
+                </div>
+                <!--pie de modal-->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                </div>
+        </div>
+        </div>
+        </div> 
+        <!--Formulario de login-->
+        <div class="contenedor">
+            <br>
+            <h3 class="row justify-content-center">INICIAR SECIÓN</h3>
+            <form class="form-sigin">
+                <br>
+                <div id="control" class="row justify-content-md-center">
+                    <div class="form-group col-sm-8 col-md-5 col-lg-3">
+                        <label for="Correo">Correo</label>
+                        <input type="text" id="Correo" class="form-control" placeholder="ejemplo@gmail.com"/>
+                    </div>
+                </div>
+                <div id="control" class="row justify-content-md-center">
+                    <div class="form-group col-sm-8 col-md-5 col-lg-3">
+                        <label for="Contraseña">Contraseña</label>
+                            <input type="text" id="Contraseña" class="form-control" placeholder="************"/>
+                    </div>
+                </div>
+                <div id="control" class="row justify-content-md-center">
+                    <button type="submit" id="btnAceptar" class="btn btn-primary">Aceptar</button>
+                </div>
+                <br>
+            </form>
+        </div>
+    </body>
+</html>

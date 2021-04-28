@@ -1,36 +1,19 @@
-$('document').ready(function()
+strCorreo = 'miCorreo';
+strContraseña = 'miContraseña';
+$(document).ready(function()
 {
-    $('#btnAceptar').click(botonIniciarSecion)
-    $('#Contraseña').keypress(function(e)
+    $('#btnAceptar').click(function()
     {
-        botonIniciarSecion();
-    });
-
-    function botonIniciarSecion()
-    {
-        var vLog = $('#Correo').val();
-        var vPas = $('#Contraseña').val();
-        if(vLog == 'miUsuario' && vPas == 'miContraseña')
+        if($('#Contraseña').val() == strContraseña && $('Correo').val() == strCorreo)
         {
-            $('modalConf .modal-header').addClass('moda-header-success');
-            $('modalConf .modal-header h5').text('Acceso Concedido');
-            $('modalConf .modal-body p').text('Bienvenido');
-            $('modalConf').modal();
-            $('modalConf').on('hiden.bs.modal', function()
-            {
-                $('modalConf .modal-header').removeClass('modal-header-success')
-            })
+            $('#CuadroDeTexto h4').text("Correcto iniciando seción...");
+            $('#Aviso').slideToogle();
         }
         else
         {
-            $('modalConf .modal-header').addClass('moda-header-danger');
-            $('modalConf .modal-header h5').text('Error');
-            $('modalConf .modal-body h4').text('Verifique el usuario o contraseña');
-            $('modalConf').modal();
-            $('modalConf').on('hiden.bs.modal', function()
-            {
-                $('modalConf .modal-header').removeClass('modal-header-danger')
-            })
+            $('#CuadroDeTexto h4').text("Incorrecto, la contraseña o correo son incorrectos");
+            $('#Aviso').slideToogle();
         }
-    }
-});
+        alert('Se Accionó el boton aceptar');
+    });
+})

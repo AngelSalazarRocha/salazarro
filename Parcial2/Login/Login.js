@@ -1,4 +1,4 @@
-strCorreo = 'miCorreo';
+/*strCorreo = 'miCorreo';
 strContraseña = 'miContraseña';
 $(document).ready(function()
 {
@@ -6,49 +6,44 @@ $(document).ready(function()
     {
         if($('#Contraseña').val() == strContraseña && $('#Correo').val() == strCorreo)
         {
+            if($('#btnAceptar').val() == 'Aceptar')
+            {alert('el boton aceptar dice Aceptar');}
+            else{alert('el boton no dice aceptar');}
+            alert('Se Accionó el boton aceptar');
             $('#CuadroDeTexto h4').text("Correcto iniciando seción...");
             $('#Aviso').css('display','block');
-            $('#Aviso').slideToogle();
+            $('#Aviso').slideToogle('fast', 'linear');
         }
         else
         {
+            if($('#btnAceptar').val() == 'Aceptar')
+            {alert('el boton aceptar dice Aceptar');}
+            else{alert('el boton no dice aceptar');}
+            alert('Se Accionó el boton aceptar');
             $('#CuadroDeTexto h4').text("Incorrecto, la contraseña o correo son incorrectos");
             $('#Aviso').css('display','block');
-            $('#Aviso').slideToogle();
+            $('#Aviso').slideToogle('fast', 'linear');
         }
-        alert('Se Accionó el boton aceptar');
     });
-})
-/* no me funcionó el modal, este es el modal con el que habia intentado hacerlo
-$(document).ready(function()
+}) al parecer me funcionó mejor con una función auto ejecutable*/
+(function()
 {
-    $('#btnAceptar').click(function()
+    $(function()
     {
-        if($('#Contraseña').val() == strContraseña && $('#Correo').val() == strCorreo)
+        $('#btnAceptar').on('click', function()
         {
-            $('modalConf .modal-header').addClass('moda-header-success');
-            $('modalConf .modal-header h5').text('Acceso Concedido');
-            $('modalConf .modal-body p').text('Bienvenido');
-            $('modalConf').modal();
-            $('modalConf').on('hiden.bs.modal', function()
+            if($('#Contraseña').val() == 'miContraseña' && $('#Correo').val() == 'miCorreo')
             {
-                $('modalConf .modal-header').removeClass('modal-header-success')
-            })
-            alert('Se Accionó el boton aceptar');
-        }
-        else
-        {
-            $('modalConf .modal-header').addClass('moda-header-danger');
-            $('modalConf .modal-header h5').text('Error');
-            $('modalConf .modal-body h4').text('Verifique el usuario o contraseña');
-            $('modalConf').modal();
-            $('modalConf').on('hiden.bs.modal', function()
+                $('#modalConf .modal-header h5').text('Correcto');
+                $('#modalConf .modal-body p').text('Iniciando seción');
+                $('#modalConf').modal();
+            }
+            else
             {
-                $('modalConf .modal-header').removeClass('modal-header-danger')
-            })
-            alert('Se Accionó el boton aceptar');
-        }
-        alert('Se Accionó el boton aceptar');
+                $('#modalConf .modal-header h5').text('Incorrecto');
+                $('#modalConf .modal-body p').text('Verifica tu correo y contraseña');
+                $('#modalConf').modal();
+            }
+        })
     });
-})
-*/
+}());

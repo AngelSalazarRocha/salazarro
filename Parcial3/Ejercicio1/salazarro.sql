@@ -1,7 +1,7 @@
-create database salazarro;
+create database if not exists salazarro;
 use salazarro;
 
-create table usuario
+create table tendero
 (   id_usuario smallint not null auto_increment,
     nombre varchar(40),
     primer_apellido varchar(30),

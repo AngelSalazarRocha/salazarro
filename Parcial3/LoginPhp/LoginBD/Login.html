@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <title>Sing up</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="crossorigin="anonymous"></script>
+        <script tipe="text/javascript" src="./js/Login.js"></script>
+
+        <link rel="stylesheet" type='text/css' href="Login.css">
+        
+
+    </head>
+    <body>
+         <!--Modal de confirmación, este es el modal con el que intenté inicialmente-->
+         <div class="modal" tabindex="-1" role="dialog"  id="modalConf">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Empleado tienda</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Este es el texto de mensaje modal.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button id='btnClose' type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <!--Formulario de login-->
+        <div class="contenedor">
+            <div id="espacioCabecera" class="row justify-content-center">
+            </div>
+            <h3 class="row justify-content-center" id="Texto">INICIAR SECIÓN</h3>
+            <form class="form-sigin">
+                <div id="control" class="row justify-content-md-center">
+                    <div class="form-group col-sm-8 col-md-6 col-lg-4">
+                        <label for="Correo" id="Texto">Correo</label>
+                        <input type="text" id="Correo" class="form-control" placeholder="ejemplo@gmail.com"/>
+                    </div>
+                </div>
+                <div id="control" class="row justify-content-md-center">
+                    <div class="form-group col-sm-8 col-md-6 col-lg-4">
+                        <label for="Contraseña" id="Texto">Contraseña</label>
+                        <input type="text" id="Contraseña" class="form-control" placeholder="************"/>   
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div id="control" class="row justify-content-md-center">
+            <button type="button" class="btn btn-primary" id="btnAceptar">Aceptar</button>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </body>
+</html>

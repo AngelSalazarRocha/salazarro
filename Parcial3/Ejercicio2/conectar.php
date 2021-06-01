@@ -1,6 +1,6 @@
 <?php
 $hostname = 'localhost';
-$database = 'facturacion_V1.0';
+$database = 'salazarro';
 $username = 'root';
 $password = '';
 try

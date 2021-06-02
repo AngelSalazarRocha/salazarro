@@ -8,8 +8,8 @@
     echo password_hash('pineda', PASSWORD_DEFAULT, ['cost' => 11]);   //$2y$11$SDz6q3t00tZZnnXzIQJAqehQUOfgYsnyJOKzpLzzdrKyERFs/QgZK
 
     //como verificar compatibilidad de credenciales
-    if(password_verify($clave, $hash))
+    /*if(password_verify($clave, $hash))
     {   echo '<br/>';
         echo 'Los password son compatibles';
-    }
+    }*/
 ?>

@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+body
+{
+    background: linear-gradient(90deg, #86E3CE, #FE897F);
+    padding: 20px;
+}
+.container-all
+{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 100px;
+}
+.container-form
+{
+    width: 80%;
+    padding: 40px;
+    background: #ffff;
+    margin: auto;
+    border-radius: 15px;
+}
+.logo
+{
+    width: 25px;
+    display: block;
+    margin: auto;
+}
+.title
+{
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 300;
+    color: #7a7a7a;
+}
+label{
+    display: block;
+    margin-top: 30px;
+    font-size: 20px;
+    color: #7a7a7a;
+}
+input[type="text"], input[type="password"]
+{
+    width: 100%;
+    height: 30px;
+    background: rgba(0, 0, 0, 0);
+    border: 0px;
+    outline: 0px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    color: #FE897F;
+    font-size: 16px;
+}
+input[type="submit"]
+{
+    width: 100%;
+    height: 50px;
+    margin-top: 60px;
+    color: white;
+    border: 0px;
+    background: linear-gradient(90deg, #FE897F, #86E3CE);
+    font-weight: 300;
+    cursor: pointer;
+    font-size: 18px;
+}
+input[type="submit"]:hover{
+    background: linear-gradient(90deg, #86E3CE, #FE897F);
+}
+.text-footer
+{
+    display: block;
+    margin-top: 100px;
+    text-align: center;
+    color: #7a7a7a;
+    font-weight: 300;
+}
+.text-footer a
+{
+    color: #007ACC;
+    font-weight: 500;
+}
+
+/*Textos de error*/
+.msg-error
+{
+    color: red;
+    display: block;
+    margin-top: 10px;
+}
+
+/*Principal*/
+
+.ctn-welcome
+{
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    padding: 40px;
+    margin: auto;
+    background: white;
+    border-radius: 20px;
+}
+
+.logo-welcome{
+    width: 25px;
+    margin-top: 20;
+}
+
+.title-welcome{
+    font-weight: 400;
+    font-size: 40px;
+    margin-top: 20px;
+    letter-spacing: 3px;
+}
+
+.title-welcome b{
+    color: #fe897f;
+}
+
+.close-session{
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    display: block;
+    padding: 20px;
+    margin-top: 40px;
+    background: linear-gradient(90deg, #FE897F, #86E3CE);
+    color: black;
+    font-size: 18px;
+    font-weight: 300;
+    cursor: pointer;
+}
+.close-session:hover{
+    background: linear-gradient(90deg, #86E3CE, #FE897F)
+}

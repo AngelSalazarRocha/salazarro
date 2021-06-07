@@ -17,7 +17,6 @@ function botonIniciarSesion() {
         console.log(ret);
         if (ret['resultado'] != 0) {
             console.log('login incorrecto');
-
             $('#myModal .modal-header').addClass('modal-header-danger');
             $('#myModal .modal-header h2').text(ret.mensaje);
             $('#myModal .modal-body h3').text(ret.detalle);

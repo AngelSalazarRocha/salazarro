@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-<! 
 <?php
 session_start();
 if ( !isset($_SESSION['idUsuario']) || empty($_SESSION['idUsuario']) ) {

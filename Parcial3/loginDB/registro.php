@@ -14,7 +14,7 @@
     <div class="container-all">
         <div class="container-form">
             <img src="imgLogo/Logo.ico" alt="" class="logo">
-            <div class="title">Registro</div>
+            <h1 class="title">Registro</h1>
             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
                 
                 <label for="">Nombre(s)</label>

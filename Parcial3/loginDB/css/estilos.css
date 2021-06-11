@@ -57,11 +57,15 @@ input[type="text"], input[type="password"]
     color: #FE897F;
     font-size: 16px;
 }
+
+.crud{
+    margin: 5px !important; 
+}
 input[type="submit"]
 {
-    width: 100%;
-    height: 50px;
-    margin-top: 60px;
+    width: 90%;
+    height: 30px;
+    margin-top: 5px;
     color: white;
     border: 0px;
     background: linear-gradient(90deg, #FE897F, #86E3CE);
@@ -72,6 +76,7 @@ input[type="submit"]
 input[type="submit"]:hover{
     background: linear-gradient(90deg, #86E3CE, #FE897F);
 }
+
 .text-footer
 {
     display: block;
@@ -86,14 +91,29 @@ input[type="submit"]:hover{
     font-weight: 500;
 }
 
+.table-Ed-Del{
+    margin:auto;
+    border-collapse:separate;
+    border-spacing: 0px;
+    border: 0px;
+    padding: 5px;
+    text-align: center;
+    width: 80%;
+}
+
+th, td {
+    border-bottom: 1px solid #848F80;
+    border-top: 1px solid #848F80;
+}
+
 /*Textos de error*/
 .msg-error
 {
     color: red;
     display: block;
     margin-top: 10px;
+    text-align: center;
 }
-
 /*Principal*/
 
 .ctn-welcome
@@ -116,7 +136,6 @@ input[type="submit"]:hover{
     font-weight: 400;
     font-size: 40px;
     margin-top: 20px;
-    letter-spacing: 3px;
 }
 
 .title-welcome b{

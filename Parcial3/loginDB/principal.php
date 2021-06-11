@@ -29,10 +29,7 @@
 	
 	<ul class="nav nav-tabs">
 		<li class="nav-item">
-			<a class="nav-link active" aria-current="page" href="#">Inicio</a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link active" aria-current="page" href="#">Rol</a>
+			<a class="nav-link active" aria-current="page" href="crud/rol.php">Rol</a>
 		</li>
 	</ul>
 

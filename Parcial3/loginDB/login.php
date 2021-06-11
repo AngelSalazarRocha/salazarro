@@ -25,7 +25,6 @@
                 <label for="">Contraseña</label>
                 <input type="password" name="clave">
                 <span class="msg-error"><?php echo $clave_err; ?></span>
-
                 <input type="submit" value="Iniciar">
             </form>
             <span class="text-footer">No tengo cuenta. 

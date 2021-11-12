@@ -20,7 +20,7 @@
 		<h1 class="title-welcome">
 			<img src="imglogo/Logo.ico" alt="" class="logo-welcome">
 			Bienvenido
-			<div id="usuario"><?php echo $_SESSION["usuario"]; ?></div>
+			<div id="usuario"><?php echo $_SESSION["usuario"] . '-' . $_SESSION["id_usuario"]; ?></div>
 		</h1>
 
 		<a href="cerrarSesion.php" class="close-session">Cerrar sesión</a>

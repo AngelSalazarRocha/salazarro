@@ -9,10 +9,10 @@ $('document').ready(function () {
         $("#contenedorPrin").toggleClass("toggled");
     });
 
-     $("#opcion1").click(function (e) {
+    $("#opcion1").click(function (e) {
         e.preventDefault();
         $("#contenedorPrin .contenido h1").html('Catálogos');
-     });
+    });
 
     $("#opcion2").click(function (e) {
         e.preventDefault();
